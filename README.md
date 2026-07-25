@@ -21,7 +21,7 @@ A data science project analyzing 20+ seasons of career data (1,415+ goals) for L
 Python, Pandas, NumPy, Matplotlib, Scikit-learn (StandardScaler, KMeans), Streamlit
 
 ## 🚀 Live Demo
-[Try the interactive app here](#) *(add your Streamlit link once deployed)*
+[Try the interactive app here](#) *ronaldo-messi-goat-analysis-fuhsarwdjjeqdv2hgnl7ec.streamlit.app*
 
 ## 👤 Author
 **Mihika Jain**
