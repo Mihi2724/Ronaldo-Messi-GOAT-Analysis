@@ -2,11 +2,16 @@ import streamlit as st
 import pandas as pd
 import joblib
 import matplotlib.pyplot as plt
+import os
+
+# ---- Get the folder this script is in ----
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # ---- Load saved model, scaler, data (using full paths) ----
 kmeans = joblib.load(os.path.join(BASE_DIR, 'kmeans_model.pkl'))
 scaler = joblib.load(os.path.join(BASE_DIR, 'scaler.pkl'))
 season_stats = pd.read_csv(os.path.join(BASE_DIR, 'season_stats_with_clusters.csv'))
+
 
 cluster_labels = {
     0: "Prolific Right-Footed Finisher",
