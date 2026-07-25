@@ -3,10 +3,10 @@ import pandas as pd
 import joblib
 import matplotlib.pyplot as plt
 
-# ---- Load saved model, scaler, data ----
-kmeans = joblib.load('kmeans_model.pkl')
-scaler = joblib.load('scaler.pkl')
-season_stats = pd.read_csv('season_stats_with_clusters.csv')
+# ---- Load saved model, scaler, data (using full paths) ----
+kmeans = joblib.load(os.path.join(BASE_DIR, 'kmeans_model.pkl'))
+scaler = joblib.load(os.path.join(BASE_DIR, 'scaler.pkl'))
+season_stats = pd.read_csv(os.path.join(BASE_DIR, 'season_stats_with_clusters.csv'))
 
 cluster_labels = {
     0: "Prolific Right-Footed Finisher",
